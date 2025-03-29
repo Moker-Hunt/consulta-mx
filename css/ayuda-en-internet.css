@@ -1,0 +1,299 @@
+/* Estilos para la página de pagos en línea */
+
+/* Estilos generales de secciones */
+#introduccion-pagos,
+#servicios-basicos,
+#metodos-pago,
+#seguridad-pagos,
+#beneficios-pagos-electronicos {
+    margin: 3rem 0;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+#introduccion-pagos:hover,
+#servicios-basicos:hover,
+#metodos-pago:hover,
+#seguridad-pagos:hover,
+#beneficios-pagos-electronicos:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos para títulos de secciones */
+#introduccion-pagos h2,
+#servicios-basicos h2,
+#metodos-pago h2,
+#seguridad-pagos h2,
+#beneficios-pagos-electronicos h2 {
+    color: #1a365d;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 3px solid #edf2f7;
+    position: relative;
+}
+
+#introduccion-pagos h2::after,
+#servicios-basicos h2::after,
+#metodos-pago h2::after,
+#seguridad-pagos h2::after,
+#beneficios-pagos-electronicos h2::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background-color: #38a169; /* Verde para pagos */
+}
+
+/* Párrafos en secciones */
+#introduccion-pagos p,
+#servicios-basicos p,
+#metodos-pago p,
+#seguridad-pagos p,
+#beneficios-pagos-electronicos p {
+    color: #4a5568;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+/* Tarjetas de servicios */
+.servicio-card {
+    background-color: #f8fafc;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #38a169;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.servicio-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.servicio-card h3 {
+    color: #276749;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.servicio-card ul {
+    padding-left: 1.5rem;
+}
+
+.servicio-card li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.servicio-card a {
+    color: #38a169;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.servicio-card a:hover {
+    color: #276749;
+    text-decoration: underline;
+}
+
+/* Tarjetas de métodos de pago */
+.metodo-card {
+    background-color: #f8fafc;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-right: 4px solid #38a169;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.metodo-card:hover {
+    transform: translateX(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.metodo-card h3 {
+    color: #276749;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.metodo-card ul {
+    padding-left: 1.5rem;
+}
+
+.metodo-card li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+/* Consejos de seguridad */
+.seguridad-tips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.tip-item {
+    background-color: #f8fafc;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border-top: 4px solid #38a169;
+}
+
+.tip-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tip-item h3 {
+    color: #276749;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+/* Alerta de fraude */
+.alerta-fraude {
+    background-color: #fff5f5;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-left: 4px solid #e53e3e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.alerta-fraude h3 {
+    color: #c53030;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.alerta-fraude ul {
+    padding-left: 1.5rem;
+}
+
+.alerta-fraude li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    color: #4a5568;
+}
+
+/* Beneficios de pagos electrónicos */
+.beneficios-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.beneficio-card {
+    background-color: #f0fff4;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.beneficio-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #38a169, #9ae6b4);
+}
+
+.beneficio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.beneficio-card h3 {
+    color: #276749;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    #introduccion-pagos,
+    #servicios-basicos,
+    #metodos-pago,
+    #seguridad-pagos,
+    #beneficios-pagos-electronicos {
+        padding: 1.5rem;
+        margin: 2rem 0;
+    }
+    
+    #introduccion-pagos h2,
+    #servicios-basicos h2,
+    #metodos-pago h2,
+    #seguridad-pagos h2,
+    #beneficios-pagos-electronicos h2 {
+        font-size: 1.6rem;
+    }
+    
+    .seguridad-tips,
+    .beneficios-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    #introduccion-pagos h2,
+    #servicios-basicos h2,
+    #metodos-pago h2,
+    #seguridad-pagos h2,
+    #beneficios-pagos-electronicos h2 {
+        font-size: 1.4rem;
+    }
+    
+    .servicio-card,
+    .metodo-card,
+    .tip-item,
+    .beneficio-card {
+        padding: 1.2rem;
+    }
+}
+
+.pagos-image-1 {
+    background-image: url('../images/pagos-1.webp');
+}
+
+.pagos-image-2 {
+    background-image: url('../images/pagos-2.webp');
+}
+
+.pagos-image-3 {
+    background-image: url('../images/pagos-3.webp');
+}
+
+.pagos-image-4 {
+    background-image: url('../images/pagos-4.webp');
+}
+
+.pagos-image-1, .pagos-image-2, .pagos-image-3, .pagos-image-4 {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}

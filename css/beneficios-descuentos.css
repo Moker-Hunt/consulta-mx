@@ -1,0 +1,359 @@
+/* Стили для страницы бенефитов и скидок */
+
+/* Стили для основных секций */
+#introduccion-beneficios,
+#programas-sociales,
+#grupos-especificos,
+#descuentos-servicios {
+    margin: 3rem 0;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Стили для заголовков секций */
+#introduccion-beneficios h2,
+#programas-sociales h2,
+#grupos-especificos h2,
+#descuentos-servicios h2 {
+    color: #1a365d;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 3px solid #edf2f7;
+    position: relative;
+}
+
+#introduccion-beneficios h2::after,
+#programas-sociales h2::after,
+#grupos-especificos h2::after,
+#descuentos-servicios h2::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background-color: #3182ce;
+}
+
+/* Стили для параграфов */
+#introduccion-beneficios p,
+#programas-sociales p,
+#grupos-especificos p,
+#descuentos-servicios p {
+    color: #4a5568;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+/* Карточки программ */
+.programa-card {
+    background-color: #ebf8ff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #3182ce;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.programa-card h3 {
+    color: #2c5282;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.programa-card ul {
+    padding-left: 1.5rem;
+}
+
+.programa-card li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+/* Карточки групп */
+.grupo-card {
+    background-color: #e6fffa;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-right: 4px solid #319795;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.grupo-card h3 {
+    color: #285e61;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.grupo-card ul {
+    padding-left: 1.5rem;
+}
+
+.grupo-card li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+/* Контейнер услуг */
+.servicios-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+/* Карточки услуг со скидками */
+.servicio-descuento {
+    background-color: #f0f5ff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #4299e1;
+}
+
+.servicio-descuento h3 {
+    color: #2b6cb0;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.servicio-descuento p {
+    font-weight: 500;
+    color: #4a5568;
+    margin-bottom: 0.8rem;
+}
+
+.servicio-descuento ul {
+    padding-left: 1.5rem;
+}
+
+.servicio-descuento li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    color: #4a5568;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    #introduccion-beneficios,
+    #programas-sociales,
+    #grupos-especificos,
+    #descuentos-servicios {
+        padding: 1.5rem;
+        margin: 2rem 0;
+    }
+    
+    #introduccion-beneficios h2,
+    #programas-sociales h2,
+    #grupos-especificos h2,
+    #descuentos-servicios h2 {
+        font-size: 1.6rem;
+    }
+    
+    .servicios-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    #introduccion-beneficios h2,
+    #programas-sociales h2,
+    #grupos-especificos h2,
+    #descuentos-servicios h2 {
+        font-size: 1.4rem;
+    }
+    
+    .programa-card,
+    .grupo-card,
+    .servicio-descuento {
+        padding: 1.2rem;
+    }
+}
+
+/* Секция "Как получить доступ к льготам" */
+#como-acceder {
+    margin: 3rem 0;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+#como-acceder h2 {
+    color: #1a365d;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 3px solid #edf2f7;
+    position: relative;
+}
+
+#como-acceder h2::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background-color: #3182ce;
+}
+
+#como-acceder p {
+    color: #4a5568;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+/* Шаги доступа */
+.pasos-acceso {
+    margin: 2rem 0;
+}
+
+.paso {
+    background-color: #f7fafc;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #805ad5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.paso h3 {
+    color: #553c9a;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.paso p {
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.paso ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.paso li {
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
+}
+
+/* Информационное предупреждение */
+.alerta-info {
+    background-color: #fffaf0;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-left: 4px solid #ed8936;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.alerta-info h3 {
+    color: #c05621;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.alerta-info p {
+    line-height: 1.7;
+}
+
+/* Адаптивные стили для секции "como-acceder" */
+@media (max-width: 768px) {
+    #como-acceder {
+        padding: 1.5rem;
+        margin: 2rem 0;
+    }
+    
+    #como-acceder h2 {
+        font-size: 1.6rem;
+    }
+    
+    .paso {
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #como-acceder h2 {
+        font-size: 1.4rem;
+    }
+    
+    .paso h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Стили для списков и параграфов в секциях */
+#introduccion-beneficios ul,
+#programas-sociales ul,
+#grupos-especificos ul,
+#descuentos-servicios ul,
+#como-acceder ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    list-style: none;
+}
+
+#introduccion-beneficios ul li,
+#programas-sociales ul li,
+#grupos-especificos ul li,
+#descuentos-servicios ul li,
+#como-acceder ul li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    color: #4a5568;
+    list-style: none;
+}
+
+/* Дополнительные стили для элементов в .alerta-info */
+.alerta-info ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.alerta-info li {
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
+    color: #dd6b20;
+}
+
+/* Стили для strong элементов */
+strong {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.beneficios-image-1 {
+    background-image: url('../images/beneficios-1.webp');
+}
+
+.beneficios-image-2 {
+    background-image: url('../images/beneficios-2.webp');
+}
+
+.beneficios-image-3 {
+    background-image: url('../images/beneficios-3.webp');
+}
+
+.beneficios-image-4 {
+    background-image: url('../images/beneficios-4.webp');
+}
+
+.beneficios-image-1, .beneficios-image-2, .beneficios-image-3, .beneficios-image-4 {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Trámites y Servicios en México | Consulta-MX</title>
+    <meta name="description" content="Información actualizada sobre trámites, servicios, programas sociales y recursos disponibles en México. Consejos prácticos para facilitar gestiones administrativas y aprovechar beneficios.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/publicar.css">
+    <link rel="stylesheet" href="css/cookie-banner.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav-button" id="navButton" aria-label="Navegación">
+            <li class="nav-button-item"><span class="nav-button-bar"></span></li>
+            <li class="nav-button-item"><span class="nav-button-bar"></span></li>
+            <li class="nav-button-item"><span class="nav-button-bar"></span></li>
+        </ul>
+        <ul class="nav-list" id="navList" aria-label="Navegación">
+            <li class="nav-item"><a href="index.html">Inicio</a></li>
+            <li class="nav-item"><a href="internet-telefonia.html">Telefonía</a></li>
+            <li class="nav-item"><a href="ayuda-en-internet.html">Internet</a></li>
+            <li class="nav-item"><a href="beneficios-descuentos.html">Beneficios</a></li>
+            <li class="nav-item"><a href="publicar.html" class="active">Publicar</a></li>
+
+            <li class="nav-item" id="nav-item-logo"><span>consulta-mx.com</span></li>
+
+            <li class="footer-nav-item"><a href="terms.html">Términos de uso</a></li>
+            <li class="footer-nav-item"><a href="privacy.html">Política de privacidad</a></li>
+            <li class="footer-nav-item"><a href="cookies.html">Política de cookies</a></li>
+            <li class="footer-nav-item"><a href="about.html">Sobre nosotros</a></li>
+            <li class="footer-nav-item"><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <h1 class="header-title">Blog de Trámites y Servicios en México</h1>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Filtro de categorías -->
+            <section id="filtro-categorias">
+                <h2>Categorías</h2>
+                <div class="categorias-container">
+                    <a href="blog-educacion.html" class="categoria-btn">
+                        <span class="categoria-icono">🎓</span>
+                        <span class="categoria-texto">Educación y oportunidades</span>
+                    </a>
+                    <a href="blog-tecnologia.html" class="categoria-btn">
+                        <span class="categoria-icono">💻</span>
+                        <span class="categoria-texto">Tecnología y conectividad</span>
+                    </a>
+                    <a href="blog-salud.html" class="categoria-btn">
+                        <span class="categoria-icono">🏥</span>
+                        <span class="categoria-texto">Salud y bienestar</span>
+                    </a>
+                    <a href="blog-movilidad.html" class="categoria-btn">
+                        <span class="categoria-icono">🚗</span>
+                        <span class="categoria-texto">Movilidad y transporte</span>
+                    </a>
+                    <a href="blog-hogar.html" class="categoria-btn">
+                        <span class="categoria-icono">🏡</span>
+                        <span class="categoria-texto">Hogar y servicios públicos</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Artículos destacados -->
+            <section id="articulos-destacados">
+                <h2>Artículos destacados</h2>
+                <div class="destacados-grid">
+                    <article class="articulo-destacado">
+                        <div class="articulo-imagen" style="background-image: url('images/becas-universitarias.webp');"></div>
+                        <div class="articulo-contenido">
+                            <span class="articulo-categoria">🎓 Educación</span>
+                            <h3 class="articulo-titulo">Guía completa de becas universitarias 2025</h3>
+                            <p class="articulo-extracto">Todo lo que necesitas saber sobre las becas disponibles para estudiantes universitarios este año, requisitos y fechas clave.</p>
+                            <a href="blog-educacion.html#becas-universitarias" class="articulo-enlace">Leer más</a>
+                        </div>
+                    </article>
+                    <article class="articulo-destacado">
+                        <div class="articulo-imagen" style="background-image: url('images/internet-rural.webp');"></div>
+                        <div class="articulo-contenido">
+                            <span class="articulo-categoria">💻 Tecnología</span>
+                            <h3 class="articulo-titulo">Internet para todos: conectividad en zonas rurales</h3>
+                            <p class="articulo-extracto">Cómo el programa de conectividad está transformando comunidades rurales y opciones disponibles para habitantes de zonas remotas.</p>
+                            <a href="blog-tecnologia.html#internet-rural" class="articulo-enlace">Leer más</a>
+                        </div>
+                    </article>
+                    <article class="articulo-destacado">
+                        <div class="articulo-imagen" style="background-image: url('images/ahorro-energia.webp');"></div>
+                        <div class="articulo-contenido">
+                            <span class="articulo-categoria">🏡 Hogar</span>
+                            <h3 class="articulo-titulo">10 formas de reducir tu factura de electricidad</h3>
+                            <p class="articulo-extracto">Consejos prácticos para disminuir el consumo eléctrico en casa y aprovechar los subsidios gubernamentales.</p>
+                            <a href="blog-hogar.html#ahorro-energia" class="articulo-enlace">Leer más</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Publicaciones recientes -->
+            <section id="publicaciones-recientes">
+                <h2>Publicaciones recientes</h2>
+                
+                <!-- Educación y oportunidades -->
+                <div class="categoria-seccion">
+                    <h3 class="categoria-titulo"><span class="categoria-icono">🎓</span> Educación y oportunidades</h3>
+                    <div class="articulos-grid">
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">28 Mar 2025</span>
+                            <h4 class="articulo-titulo">Guía completa de becas universitarias 2025</h4>
+                            <p class="articulo-extracto">Todo lo que necesitas saber sobre las becas disponibles para estudiantes universitarios este año, requisitos y fechas clave.</p>
+                            <a href="blog-educacion.html#becas-universitarias" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">25 Mar 2025</span>
+                            <h4 class="articulo-titulo">Cómo obtener beca en el extranjero con apoyo de CONACYT</h4>
+                            <p class="articulo-extracto">Proceso paso a paso para aplicar a becas de posgrado en el extranjero con financiamiento del Consejo Nacional de Ciencia y Tecnología.</p>
+                            <a href="blog-educacion.html#becas-extranjero" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">20 Mar 2025</span>
+                            <h4 class="articulo-titulo">Universidades públicas vs privadas: ¿Cuál conviene más?</h4>
+                            <p class="articulo-extracto">Análisis comparativo de las ventajas y desventajas de estudiar en universidades públicas y privadas en México.</p>
+                            <a href="blog-educacion.html#universidades-comparativa" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">15 Mar 2025</span>
+                            <h4 class="articulo-titulo">Cursos gratuitos en línea con validez oficial</h4>
+                            <p class="articulo-extracto">Plataformas que ofrecen cursos reconocidos por la SEP y otras instituciones para mejorar tu currículum sin costo.</p>
+                            <a href="blog-educacion.html#cursos-gratuitos" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">10 Mar 2025</span>
+                            <h4 class="articulo-titulo">Programas de apoyo para jóvenes emprendedores</h4>
+                            <p class="articulo-extracto">Fondos, incubadoras y recursos disponibles para jóvenes que quieren iniciar su propio negocio en México.</p>
+                            <a href="blog-educacion.html#emprendedores" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">5 Mar 2025</span>
+                            <h4 class="articulo-titulo">Becas para estudiantes de preparatoria</h4>
+                            <p class="articulo-extracto">Opciones de apoyo económico para jóvenes de educación media superior y cómo solicitarlas correctamente.</p>
+                            <a href="blog-educacion.html#becas-preparatoria" class="articulo-enlace">Leer más</a>
+                        </article>
+                    </div>
+                    <a href="blog-educacion.html" class="ver-mas-btn">Ver todos los artículos de educación</a>
+                </div>
+                
+                <!-- Tecnología y conectividad -->
+                <div class="categoria-seccion">
+                    <h3 class="categoria-titulo"><span class="categoria-icono">💻</span> Tecnología y conectividad</h3>
+                    <div class="articulos-grid">
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">27 Mar 2025</span>
+                            <h4 class="articulo-titulo">Internet para todos: conectividad en zonas rurales</h4>
+                            <p class="articulo-extracto">Cómo el programa de conectividad está transformando comunidades rurales y opciones disponibles para habitantes de zonas remotas.</p>
+                            <a href="blog-tecnologia.html#internet-rural" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">24 Mar 2025</span>
+                            <h4 class="articulo-titulo">Comparativa de operadores móviles 2025</h4>
+                            <p class="articulo-extracto">Análisis de planes, cobertura y precios de las principales compañías de telefonía móvil en México este año.</p>
+                            <a href="blog-tecnologia.html#operadores-moviles" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">21 Mar 2025</span>
+                            <h4 class="articulo-titulo">Cómo realizar trámites gubernamentales en línea</h4>
+                            <p class="articulo-extracto">Guía para utilizar plataformas digitales y realizar gestiones oficiales sin hacer filas ni trasladarse.</p>
+                            <a href="blog-tecnologia.html#tramites-online" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">18 Mar 2025</span>
+                            <h4 class="articulo-titulo">5G en México: disponibilidad y beneficios</h4>
+                            <p class="articulo-extracto">Estado actual de la implementación de la red 5G en el país y qué ventajas ofrece para usuarios y empresas.</p>
+                            <a href="blog-tecnologia.html#5g-mexico" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">15 Mar 2025</span>
+                            <h4 class="articulo-titulo">Ciberseguridad: protege tus datos en línea</h4>
+                            <p class="articulo-extracto">Consejos para mantener seguros tus datos personales y financieros al realizar trámites y compras por internet.</p>
+                            <a href="blog-tecnologia.html#ciberseguridad" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">12 Mar 2025</span>
+                            <h4 class="articulo-titulo">Aplicaciones gubernamentales que debes conocer</h4>
+                            <p class="articulo-extracto">Apps oficiales que facilitan trámites, pagos y acceso a servicios públicos desde tu smartphone.</p>
+                            <a href="blog-tecnologia.html#apps-gobierno" class="articulo-enlace">Leer más</a>
+                        </article>
+                    </div>
+                    <a href="blog-tecnologia.html" class="ver-mas-btn">Ver todos los artículos de tecnología</a>
+                </div>
+                
+                <!-- Salud y bienestar -->
+                <div class="categoria-seccion">
+                    <h3 class="categoria-titulo"><span class="categoria-icono">🏥</span> Salud y bienestar</h3>
+                    <div class="articulos-grid">
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">29 Mar 2025</span>
+                            <h4 class="articulo-titulo">Cómo afiliarse al INSABI: requisitos y beneficios</h4>
+                            <p class="articulo-extracto">Guía completa para registrarse en el Instituto de Salud para el Bienestar y acceder a servicios médicos gratuitos.</p>
+                            <a href="blog-salud.html#afiliacion-insabi" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">26 Mar 2025</span>
+                            <h4 class="articulo-titulo">Derechos de los derechohabientes del IMSS</h4>
+                            <p class="articulo-extracto">Todo lo que debes saber sobre tus derechos como asegurado y cómo exigirlos cuando no se cumplan.</p>
+                            <a href="blog-salud.html#derechos-imss" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">23 Mar 2025</span>
+                            <h4 class="articulo-titulo">Farmacias del Bienestar: ubicaciones y medicamentos disponibles</h4>
+                            <p class="articulo-extracto">Cómo acceder a medicamentos gratuitos y dónde encontrar las Farmacias del Bienestar más cercanas a tu domicilio.</p>
+                            <a href="blog-salud.html#farmacias-bienestar" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">20 Mar 2025</span>
+                            <h4 class="articulo-titulo">Calendario de vacunación 2025</h4>
+                            <p class="articulo-extracto">Fechas y ubicaciones para las diferentes campañas de vacunación gratuita en todo el país.</p>
+                            <a href="blog-salud.html#calendario-vacunacion" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">17 Mar 2025</span>
+                            <h4 class="articulo-titulo">Seguro Popular vs INSABI: ¿Qué cambió?</h4>
+                            <p class="articulo-extracto">Diferencias entre el antiguo Seguro Popular y el actual INSABI, y cómo afecta a los usuarios del sistema de salud.</p>
+                            <a href="blog-salud.html#seguro-insabi" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">14 Mar 2025</span>
+                            <h4 class="articulo-titulo">Programas de salud mental gratuitos</h4>
+                            <p class="articulo-extracto">Recursos disponibles para atención psicológica y psiquiátrica sin costo a través de instituciones públicas.</p>
+                            <a href="blog-salud.html#salud-mental" class="articulo-enlace">Leer más</a>
+                        </article>
+                    </div>
+                    <a href="blog-salud.html" class="ver-mas-btn">Ver todos los artículos de salud</a>
+                </div>
+                
+                <!-- Movilidad y transporte -->
+                <div class="categoria-seccion">
+                    <h3 class="categoria-titulo"><span class="categoria-icono">🚗</span> Movilidad y transporte</h3>
+                    <div class="articulos-grid">
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">30 Mar 2025</span>
+                            <h4 class="articulo-titulo">Nueva licencia de conducir digital: cómo tramitarla</h4>
+                            <p class="articulo-extracto">Proceso para obtener la nueva licencia de conducir en formato digital, requisitos y ventajas sobre la versión física.</p>
+                            <a href="blog-movilidad.html#licencia-digital" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">27 Mar 2025</span>
+                            <h4 class="articulo-titulo">Verificación vehicular 2025: calendario y requisitos</h4>
+                            <p class="articulo-extracto">Fechas, costos y documentación necesaria para cumplir con la verificación vehicular según tu entidad federativa.</p>
+                            <a href="blog-movilidad.html#verificacion-vehicular" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">24 Mar 2025</span>
+                            <h4 class="articulo-titulo">Cómo pagar multas de tránsito con descuento</h4>
+                            <p class="articulo-extracto">Periodos de descuento para el pago de infracciones y procedimientos para impugnar multas injustificadas.</p>
+                            <a href="blog-movilidad.html#multas-descuento" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">21 Mar 2025</span>
+                            <h4 class="articulo-titulo">Tarjetas de descuento para transporte público</h4>
+                            <p class="articulo-extracto">Opciones de tarjetas recargables y beneficios especiales para estudiantes, adultos mayores y personas con discapacidad.</p>
+                            <a href="blog-movilidad.html#tarjetas-transporte" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">18 Mar 2025</span>
+                            <h4 class="articulo-titulo">Reemplacamiento 2025: estados participantes y costos</h4>
+                            <p class="articulo-extracto">Estados que tendrán reemplacamiento este año, tarifas y procedimiento para realizar el trámite sin complicaciones.</p>
+                            <a href="blog-movilidad.html#reemplacamiento" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">15 Mar 2025</span>
+                            <h4 class="articulo-titulo">Programas de movilidad sustentable en ciudades mexicanas</h4>
+                            <p class="articulo-extracto">Iniciativas de transporte ecológico, ciclovías y sistemas de bicicletas públicas en las principales urbes del país.</p>
+                            <a href="blog-movilidad.html#movilidad-sustentable" class="articulo-enlace">Leer más</a>
+                        </article>
+                    </div>
+                    <a href="blog-movilidad.html" class="ver-mas-btn">Ver todos los artículos de movilidad</a>
+                </div>
+                
+                <!-- Hogar y servicios públicos -->
+                <div class="categoria-seccion">
+                    <h3 class="categoria-titulo"><span class="categoria-icono">🏡</span> Hogar y servicios públicos</h3>
+                    <div class="articulos-grid">
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">29 Mar 2025</span>
+                            <h4 class="articulo-titulo">10 formas de reducir tu factura de electricidad</h4>
+                            <p class="articulo-extracto">Consejos prácticos para disminuir el consumo eléctrico en casa y aprovechar los subsidios gubernamentales.</p>
+                            <a href="blog-hogar.html#ahorro-energia" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">26 Mar 2025</span>
+                            <h4 class="articulo-titulo">Guía para solicitar un crédito hipotecario INFONAVIT</h4>
+                            <p class="articulo-extracto">Requisitos, documentación y proceso paso a paso para obtener un crédito para vivienda a través del INFONAVIT.</p>
+                            <a href="blog-hogar.html#credito-infonavit" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">23 Mar 2025</span>
+                            <h4 class="articulo-titulo">Programas de apoyo para regularización de predios</h4>
+                            <p class="articulo-extracto">Iniciativas gubernamentales para obtener títulos de propiedad en asentamientos irregulares y colonias populares.</p>
+                            <a href="blog-hogar.html#regularizacion-predios" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">20 Mar 2025</span>
+                            <h4 class="articulo-titulo">Cómo impugnar el valor catastral de tu propiedad</h4>
+                            <p class="articulo-extracto">Procedimiento para solicitar la revisión del valor catastral asignado a tu propiedad y reducir el pago de predial.</p>
+                            <a href="blog-hogar.html#valor-catastral" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">17 Mar 2025</span>
+                            <h4 class="articulo-titulo">Subsidios para mejorar tu vivienda</h4>
+                            <p class="articulo-extracto">Programas federales y estatales que ofrecen apoyo económico para ampliaciones, remodelaciones y mejoras en el hogar.</p>
+                            <a href="blog-hogar.html#subsidios-vivienda" class="articulo-enlace">Leer más</a>
+                        </article>
+                        <article class="articulo-card">
+                            <span class="articulo-fecha">14 Mar 2025</span>
+                            <h4 class="articulo-titulo">Captación de agua pluvial: normativa y beneficios</h4>
+                            <p class="articulo-extracto">Regulaciones para implementar sistemas de captación de agua de lluvia en viviendas y descuentos en tarifas de agua.</p>
+                            <a href="blog-hogar.html#captacion-agua" class="articulo-enlace">Leer más</a>
+                        </article>
+                    </div>
+                    <a href="blog-hogar.html" class="ver-mas-btn">Ver todos los artículos de hogar</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-content-item">Este sitio es un recurso informativo independiente y no está asociado con el gobierno de México.</p>
+            <p class="footer-content-item">&copy; 2025 consulta-mx.com. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <div id="cookieBannerOverlay" class="cookie-banner-overlay">
+        <div class="cookie-banner">
+            <h2 class="cookie-banner-title">Uso de Cookies</h2>
+            <p class="cookie-banner-text">Este sitio web utiliza cookies para garantizar que obtenga la mejor experiencia en nuestro sitio web. Al continuar utilizando este sitio, acepta nuestra política de cookies y nuestra política de privacidad.</p>
+            <div class="cookie-banner-links">
+                <a href="terms.html">Términos de uso</a>
+                <a href="privacy.html">Política de privacidad</a>
+                <a href="cookies.html">Política de cookies</a>
+            </div>
+            <div class="cookie-banner-buttons">
+                <button id="cookieAcceptBtn" class="cookie-accept-btn">Aceptar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/cookie-banner.js"></script>
+    <script src="js/nav-scroll.js"></script>
+</body>
+</html>
