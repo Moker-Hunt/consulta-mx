@@ -1,279 +1,80 @@
-/* Estilos para la página de pagos en línea */
+/* Styles for Ayuda en Internet page */
 
-/* Estilos generales de secciones */
-#introduccion-pagos,
-#servicios-basicos,
-#metodos-pago,
-#seguridad-pagos,
-#beneficios-pagos-electronicos {
-    margin: 3rem 0;
-    padding: 2rem;
-    border-radius: 12px;
-    background-color: #fff;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+
+/* Main content container */
+.main-content {
+    padding: 40px 0;
+}
+
+/* Content container */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section styling */
+section {
+    margin-bottom: 60px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
     transition: transform 0.3s ease;
 }
 
-#introduccion-pagos:hover,
-#servicios-basicos:hover,
-#metodos-pago:hover,
-#seguridad-pagos:hover,
-#beneficios-pagos-electronicos:hover {
+section:hover {
     transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para títulos de secciones */
-#introduccion-pagos h2,
-#servicios-basicos h2,
-#metodos-pago h2,
-#seguridad-pagos h2,
-#beneficios-pagos-electronicos h2 {
-    color: #1a365d;
+/* Section headings */
+section h2 {
+    color: var(--primary-color);
     font-size: 2rem;
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.8rem;
-    border-bottom: 3px solid #edf2f7;
+    margin-bottom: 25px;
     position: relative;
+    padding-bottom: 10px;
 }
 
-#introduccion-pagos h2::after,
-#servicios-basicos h2::after,
-#metodos-pago h2::after,
-#seguridad-pagos h2::after,
-#beneficios-pagos-electronicos h2::after {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 100px;
-    height: 3px;
-    background-color: #38a169; /* Verde para pagos */
-}
-
-/* Párrafos en secciones */
-#introduccion-pagos p,
-#servicios-basicos p,
-#metodos-pago p,
-#seguridad-pagos p,
-#beneficios-pagos-electronicos p {
-    color: #4a5568;
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
-    font-size: 1.05rem;
-}
-
-/* Tarjetas de servicios */
-.servicio-card {
-    background-color: #f8fafc;
-    border-radius: 10px;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    border-left: 4px solid #38a169;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.servicio-card:hover {
-    transform: translateX(5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-.servicio-card h3 {
-    color: #276749;
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
-    font-weight: 600;
-}
-
-.servicio-card ul {
-    padding-left: 1.5rem;
-}
-
-.servicio-card li {
-    margin-bottom: 0.8rem;
-    line-height: 1.6;
-}
-
-.servicio-card a {
-    color: #38a169;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s ease;
-}
-
-.servicio-card a:hover {
-    color: #276749;
-    text-decoration: underline;
-}
-
-/* Tarjetas de métodos de pago */
-.metodo-card {
-    background-color: #f8fafc;
-    border-radius: 10px;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    border-right: 4px solid #38a169;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.metodo-card:hover {
-    transform: translateX(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-.metodo-card h3 {
-    color: #276749;
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
-    font-weight: 600;
-}
-
-.metodo-card ul {
-    padding-left: 1.5rem;
-}
-
-.metodo-card li {
-    margin-bottom: 0.8rem;
-    line-height: 1.6;
-}
-
-/* Consejos de seguridad */
-.seguridad-tips {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem 0;
-}
-
-.tip-item {
-    background-color: #f8fafc;
-    border-radius: 10px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-    border-top: 4px solid #38a169;
-}
-
-.tip-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-}
-
-.tip-item h3 {
-    color: #276749;
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
-    font-weight: 600;
-}
-
-/* Alerta de fraude */
-.alerta-fraude {
-    background-color: #fff5f5;
-    border-radius: 10px;
-    padding: 1.5rem;
-    margin-top: 2rem;
-    border-left: 4px solid #e53e3e;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.alerta-fraude h3 {
-    color: #c53030;
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
-    font-weight: 600;
-}
-
-.alerta-fraude ul {
-    padding-left: 1.5rem;
-}
-
-.alerta-fraude li {
-    margin-bottom: 0.8rem;
-    line-height: 1.6;
-    color: #4a5568;
-}
-
-/* Beneficios de pagos electrónicos */
-.beneficios-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem 0;
-}
-
-.beneficio-card {
-    background-color: #f0fff4;
-    border-radius: 10px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.beneficio-card::before {
+section h2::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, #38a169, #9ae6b4);
+    margin: 0 auto;
+    height: 3px;
+    background: var(--gradient-primary);
+    border-radius: 2px;
+    justify-self: center;
 }
 
-.beneficio-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+
+section p {
+    line-height: 2;
+    background: linear-gradient(135deg, #f8f9ff8d, #e5f1fe);
+    padding: 15px;
+    margin: 10px 0;
 }
 
-.beneficio-card h3 {
-    color: #276749;
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
-    font-weight: 600;
+section p:after {
+    content: '';
+    display: block;
+    margin: 8px auto 15px;
+    width: 85%;
+    height: 1px;
+    background: var(--gradient-primary);
+    border-radius: 2px;
 }
 
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    #introduccion-pagos,
-    #servicios-basicos,
-    #metodos-pago,
-    #seguridad-pagos,
-    #beneficios-pagos-electronicos {
-        padding: 1.5rem;
-        margin: 2rem 0;
-    }
-    
-    #introduccion-pagos h2,
-    #servicios-basicos h2,
-    #metodos-pago h2,
-    #seguridad-pagos h2,
-    #beneficios-pagos-electronicos h2 {
-        font-size: 1.6rem;
-    }
-    
-    .seguridad-tips,
-    .beneficios-container {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    #introduccion-pagos h2,
-    #servicios-basicos h2,
-    #metodos-pago h2,
-    #seguridad-pagos h2,
-    #beneficios-pagos-electronicos h2 {
-        font-size: 1.4rem;
-    }
-    
-    .servicio-card,
-    .metodo-card,
-    .tip-item,
-    .beneficio-card {
-        padding: 1.2rem;
-    }
+section ul {
+    line-height: 2;
+    background: linear-gradient(135deg, #f8f9ff8d, #e5f1fe);
+    padding: 15px;
+    margin: 10px 0;
+    list-style: none;
 }
 
 .pagos-image-1 {
@@ -292,8 +93,235 @@
     background-image: url('../images/pagos-4.webp');
 }
 
-.pagos-image-1, .pagos-image-2, .pagos-image-3, .pagos-image-4 {
-    background-size: auto 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+/* Service cards */
+.servicio-card {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.servicio-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.servicio-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.servicio-card ul {
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.servicio-card li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.servicio-card strong {
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+/* Payment method cards */
+.metodo-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    border-top: 4px solid transparent;
+    background-image: linear-gradient(white, white), var(--gradient-primary);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.metodo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.metodo-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.metodo-card ul {
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.metodo-card li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.metodo-card strong {
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+/* Steps section */
+.seguridad-tips {
+    margin-top: 30px;
+    position: relative;
+}
+
+.seguridad-tips::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    width: 4px;
+    background: var(--gradient-primary);
+    border-radius: 2px;
+}
+
+.tip-item {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 40px;
+}
+
+.tip-item::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 4px solid var(--primary-color);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.tip-item:last-child {
+    margin-bottom: 0;
+}
+
+.tip-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.tip-item ul {
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.tip-item li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.tip-item strong {
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+@media (max-width: 568px) {
+    #seguridad-pagos {
+        padding: 15x;
+    }
+
+    .seguridad-tips::before {
+        left: -6px;
+    }
+
+    .tip-item {
+        padding-left: 12px;
+    }
+
+    .tip-item::before {
+        left: -18px;
+    }
+
+    .tip-item ul {
+        padding-left: 10px;
+    }
+
+    .tip-item li {
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+}
+
+/* Resources section */
+.beneficios-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.beneficio-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #0d626f;
+    border-radius: 10px;
+}
+
+.beneficio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.beneficio-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.beneficio-card p {
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.beneficio-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--gradient-primary);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    
+    section h2 {
+        font-size: 1.6rem;
+    }
+    
+    .servicio-card, .metodo-card {
+        padding: 20px;
+    }
+    
+    .recursos-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .contacto-ayuda {
+        padding: 30px 20px;
+    }
 }
