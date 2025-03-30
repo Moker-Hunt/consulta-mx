@@ -63,7 +63,6 @@
     font-size: 0.95rem;
 }
 
-/* Медиа-запрос для мобильных устройств */
 @media (max-width: 768px) {
     .categorias-container {
         gap: 10px;
@@ -83,7 +82,6 @@
     }
 }
 
-/* Стили для секции выделенных статей */
 #articulos-destacados {
     margin: 3rem 0;
 }
@@ -189,7 +187,6 @@
     background-color: var(--color-highlight);
 }
 
-/* Медиа-запросы для адаптивности */
 @media (max-width: 768px) {
     .destacados-grid {
         grid-template-columns: 1fr;
@@ -204,7 +201,6 @@
     }
 }
 
-/* Стили для секции недавних публикаций */
 #publicaciones-recientes {
     margin: 4rem 0;
 }
@@ -252,7 +248,7 @@
 
 .articulos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 20px;
     margin-bottom: 1.5rem;
 }
@@ -338,7 +334,6 @@
     background-color: #2e59d9;
 }
 
-/* Медиа-запросы для адаптивности */
 @media (max-width: 768px) {
     #publicaciones-recientes h2 {
         font-size: 1.8rem !important;
@@ -365,10 +360,6 @@
     }
 }
 
-
-
-
-/* Артикулы детальные - Расширенные стили */
 .articulos-detallados {
     max-width: 1000px;
     margin: 3rem auto;
@@ -547,7 +538,6 @@
     padding: 0 2px;
 }
 
-/* Стили для таблиц */
 .articulo-contenido-completo table {
     width: 100%;
     margin: 2rem 0;
@@ -589,7 +579,6 @@
     vertical-align: middle;
 }
 
-/* Стили для цитат */
 .articulo-contenido-completo blockquote {
     margin: 2rem 0;
     padding: 1.5rem 2rem;
@@ -611,7 +600,6 @@
     font-family: Georgia, serif;
 }
 
-/* Стили для кода */
 .articulo-contenido-completo pre,
 .articulo-contenido-completo code {
     background-color: #f1f5f9;
@@ -638,7 +626,6 @@
     background-color: transparent;
 }
 
-/* Стили для ссылок */
 .articulo-contenido-completo a {
     color: #3182ce;
     text-decoration: none;
@@ -651,7 +638,6 @@
     border-bottom: 1px solid #2c5282;
 }
 
-/* Стили для изображений внутри контента */
 .articulo-contenido-completo img {
     max-width: 100%;
     height: auto;
@@ -660,7 +646,6 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .articulo-header {
         padding: 1.5rem;
